@@ -1,0 +1,105 @@
+/* STACKD design tokens. One system for mobile, web and admin.
+   Concept: scoreboard type on matte black, chalk-white actions, colour reserved for meaning:
+   cobalt = selection/focus, green = money, heat = live/streak. */
+
+:root {
+  /* surfaces */
+  --bg: #0c0d10;
+  --surface: #15171c;
+  --elevated: #1d2027;
+  --overlay: #262a33;
+  --border: #2a2e37;
+  --border-strong: #3a3f4a;
+
+  /* text */
+  --text: #f2efe6;
+  --muted: #9ea1aa;
+  --faint: #6a6e78;
+
+  /* brand + roles */
+  --primary: #f2efe6;           /* chalk: primary actions */
+  --on-primary: #0c0d10;
+  --secondary: #5b6cff;         /* cobalt: selection, focus, progress */
+  --on-secondary: #ffffff;
+  --money: #3ddc97;             /* winnings, balances, positive deltas */
+  --heat: #ff6b3d;              /* live, streaks */
+  --success: #3ddc97;
+  --warning: #ffb547;
+  --error: #ff5468;
+  --info: #59a8ff;
+
+  --secondary-soft: rgb(91 108 255 / 0.14);
+  --money-soft: rgb(61 220 151 / 0.12);
+  --heat-soft: rgb(255 107 61 / 0.14);
+  --warning-soft: rgb(255 181 71 / 0.13);
+  --error-soft: rgb(255 84 104 / 0.13);
+  --info-soft: rgb(89 168 255 / 0.13);
+
+  /* rank colours */
+  --rank-bronze: #c58a5a;
+  --rank-silver: #b9c0cc;
+  --rank-gold: #f2c14e;
+  --rank-platinum: #7fd6d0;
+  --rank-diamond: #7fa2ff;
+  --rank-elite: #c77dff;
+  --rank-master: #ff6b3d;
+
+  /* type */
+  --font: 'Archivo', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --t-xs: 12px;
+  --t-sm: 13px;
+  --t-base: 15px;
+  --t-md: 17px;
+  --t-lg: 21px;
+  --t-xl: 28px;
+  --t-2xl: 36px;
+  --d-3: clamp(30px, 4.4vw, 48px);
+  --d-2: clamp(44px, 8vw, 96px);
+  --d-1: clamp(72px, 15vw, 210px);
+  --lh-tight: 0.9;
+  --lh-snug: 1.2;
+  --lh-body: 1.5;
+
+  /* space (4pt) */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --s-10: 40px;
+  --s-12: 48px;
+  --s-16: 64px;
+  --s-20: 80px;
+  --gutter: 16px;
+
+  /* shape: radius follows hierarchy */
+  --r-xs: 6px;    /* chips, inputs */
+  --r-sm: 10px;   /* buttons */
+  --r-md: 14px;   /* cards */
+  --r-lg: 20px;   /* media, hero blocks */
+  --r-pill: 999px;
+
+  --shadow-overlay: 0 24px 64px rgb(0 0 0 / 0.55), 0 0 0 1px var(--border);
+
+  /* motion */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --t-fast: 120ms;
+  --t-med: 220ms;
+  --t-slow: 380ms;
+
+  /* chrome */
+  --topbar-h: 56px;
+  --bottomnav-h: 64px;
+  --maxw: 1320px;
+
+  color-scheme: dark;
+}
+
+@media (min-width: 640px) {
+  :root { --gutter: 24px; }
+}
+@media (min-width: 1024px) {
+  :root { --topbar-h: 64px; --gutter: 32px; }
+}

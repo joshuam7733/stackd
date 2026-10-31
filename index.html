@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!-- STACKD static demo build: the backend runs in this browser (see README → Hosting). -->
+  <script>window.process = window.process || { env: {} };</script>
+  <script type="importmap">{ "imports": { "node:crypto": "./web-demo/node-crypto.js" } }</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0E0F12" />
+  <title>STACKD — Play for the bag.</title>
+  <meta name="description" content="Compete in the games you already play. Challenges, head-to-heads, tournaments and team pools — play for the bag." />
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..900;1,62..125,300..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/styles/tokens.css" />
+  <link rel="stylesheet" href="src/styles/base.css" />
+  <link rel="stylesheet" href="src/styles/components.css" />
+  <link rel="stylesheet" href="src/styles/layout.css" />
+  <link rel="stylesheet" href="src/styles/screens.css" />
+  <link rel="stylesheet" href="src/styles/motion.css" />
+  <link rel="stylesheet" href="src/styles/fit.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="boot"><span class="boot-mark">STACKD</span></div>
+  </div>
+  <div id="portal"></div>
+  <noscript>STACKD needs JavaScript to run.</noscript>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
