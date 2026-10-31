@@ -1,0 +1,14 @@
+node_modules/
+data/
+.env
+*.db
+*.db-shm
+*.db-wal
+deploy/
+stackd-netlify.zip
+.env.*
+!.env.example
+*.log
+.claude/
+.tools/
+docs/investor-pack/

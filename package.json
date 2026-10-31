@@ -1,0 +1,24 @@
+{
+  "name": "stackd",
+  "version": "1.0.0",
+  "private": true,
+  "description": "STACKD — competitive gaming platform (DEMO MODE). Play for the bag.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node server/main.js",
+    "dev": "node --watch-path=server --watch-path=src/shared server/main.js",
+    "db:migrate": "node server/scripts/migrate.js",
+    "db:seed": "node server/scripts/seed.js",
+    "db:reset": "node server/scripts/seed.js --reset",
+    "admin:create": "node server/scripts/create-admin.js",
+    "build:static": "node server/scripts/build-static.js",
+    "test": "node --test --test-concurrency=1 \"server/tests/*.test.js\"",
+    "db:check": "node server/scripts/check-db.js"
+  },
+  "dependencies": {
+    "openid-client": "^6.8.1"
+  }
+}

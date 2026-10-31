@@ -1,0 +1,5 @@
+# STACKD is a static site: no build step, publish the folder as-is.
+# Routing uses URL hashes (#/app/...), so no redirect rules are needed.
+[build]
+  publish = "."
+  command = ""

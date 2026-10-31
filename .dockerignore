@@ -1,0 +1,8 @@
+node_modules
+data
+deploy
+docs
+tools
+.claude
+.env
+stackd-netlify.zip
